@@ -42,5 +42,63 @@
         <copy todir="${build.generated.sources.dir}/jaxb">
             <fileset dir="build/generated/jaxbCache/datatype-po"/>
         </copy>
+        <mkdir dir="build/generated/jaxbCache/converter-po"/>
+        <xjc package="converter" destdir="build/generated/jaxbCache/converter-po" catalog="catalog.xml">
+            <classpath>
+                <pathelement location="${src.dir}"/>
+                <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
+            </classpath>
+            <arg value="-xmlschema"/>
+            <schema file="xml-resources/jaxb/converter-po/po.xsd"/>
+            <depends file="xml-resources/jaxb/converter-po/po.xsd"/>
+            <produces dir="build/generated/jaxbCache/converter-po"/>
+        </xjc>
+        <copy todir="${build.generated.sources.dir}/jaxb">
+            <fileset dir="build/generated/jaxbCache/converter-po"/>
+        </copy>
+        <mkdir dir="build/generated/jaxbCache/unmarshal-po"/>
+        <xjc package="unmarshal" destdir="build/generated/jaxbCache/unmarshal-po" catalog="catalog.xml">
+            <classpath>
+                <pathelement location="${src.dir}"/>
+                <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
+            </classpath>
+            <arg value="-xmlschema"/>
+            <arg value="-verbose"/>
+            <schema file="xml-resources/jaxb/unmarshal-po/po.xsd"/>
+            <depends file="xml-resources/jaxb/unmarshal-po/po.xsd"/>
+            <produces dir="build/generated/jaxbCache/unmarshal-po"/>
+        </xjc>
+        <copy todir="${build.generated.sources.dir}/jaxb">
+            <fileset dir="build/generated/jaxbCache/unmarshal-po"/>
+        </copy>
+        <mkdir dir="build/generated/jaxbCache/pullparser"/>
+        <xjc package="pullparser" destdir="build/generated/jaxbCache/pullparser" catalog="catalog.xml">
+            <classpath>
+                <pathelement location="${src.dir}"/>
+                <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
+            </classpath>
+            <arg value="-xmlschema"/>
+            <arg value="-verbose"/>
+            <schema file="xml-resources/jaxb/pullparser/contact.xsd"/>
+            <depends file="xml-resources/jaxb/pullparser/contact.xsd"/>
+            <produces dir="build/generated/jaxbCache/pullparser"/>
+        </xjc>
+        <copy todir="${build.generated.sources.dir}/jaxb">
+            <fileset dir="build/generated/jaxbCache/pullparser"/>
+        </copy>
+        <mkdir dir="build/generated/jaxbCache/inline"/>
+        <xjc package="inline" destdir="build/generated/jaxbCache/inline" catalog="catalog.xml">
+            <classpath>
+                <pathelement location="${src.dir}"/>
+                <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
+            </classpath>
+            <arg value="-xmlschema"/>
+            <schema file="xml-resources/jaxb/inline/po.xsd"/>
+            <depends file="xml-resources/jaxb/inline/po.xsd"/>
+            <produces dir="build/generated/jaxbCache/inline"/>
+        </xjc>
+        <copy todir="${build.generated.sources.dir}/jaxb">
+            <fileset dir="build/generated/jaxbCache/inline"/>
+        </copy>
     </target>
 </project>

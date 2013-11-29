@@ -21,4 +21,46 @@
 		</bindings>
 		<catalog/>
 	</schema>
+	<schema type='-xmlschema' package='converter' name='converter-po'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='xml-resources/jaxb/converter-po/po.xsd' origLocation='src/typeconverter/po.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+	<schema type='-xmlschema' package='unmarshal' name='unmarshal-po'>
+		<xjc-options>
+			<xjc-option name='-verbose' value='true'/>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='xml-resources/jaxb/unmarshal-po/po.xsd' origLocation='src/unmarshal/po.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+	<schema type='-xmlschema' package='pullparser' name='pullparser'>
+		<xjc-options>
+			<xjc-option name='-verbose' value='true'/>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='xml-resources/jaxb/pullparser/contact.xsd' origLocation='src/pullparser/contact.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+	<schema type='-xmlschema' package='inline' name='inline'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='xml-resources/jaxb/inline/po.xsd' origLocation='src/innercustomize/po.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
 </schemas>

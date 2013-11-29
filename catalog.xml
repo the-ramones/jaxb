@@ -2,4 +2,9 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="file:/C:/Documents%20and%20Settings/Кулицкий/Мои%20документы/NetBeansProjects/modify-marshal/po.xsd" uri="xml-resources/jaxb/modify/po.xsd"/>
     <system systemId="file:/C:/Documents%20and%20Settings/Кулицкий/Мои%20документы/NetBeansProjects/modify-marshal/src/datatype/converter/po.xsd" uri="xml-resources/jaxb/datatype-po/po.xsd"/>
+    <system systemId="file:/C:/Documents%20and%20Settings/Кулицкий/Мои%20документы/NetBeansProjects/modify-marshal/src/unmarshal/po.xsd" uri="xml-resources/jaxb/unmarshal-po/po.xsd"/>
+    <system systemId="file:/C:/Documents%20and%20Settings/Кулицкий/Мои%20документы/NetBeansProjects/modify-marshal/src/typeconverter/po.xsd" uri="xml-resources/jaxb/converter-po/po.xsd"/>
+    <system systemId="file:/C:/Documents%20and%20Settings/Кулицкий/Мои%20документы/NetBeansProjects/modify-marshal/src/pullparser/contact.xsd" uri="xml-resources/jaxb/pullparser/contact.xsd"/>
+    <system systemId="file:/C:/Documents%20and%20Settings/Кулицкий/Мои%20документы/NetBeansProjects/modify-marshal/src/innercustomize/po.xsd" uri="xml-resources/jaxb/inline/po.xsd"/>
+    <system systemId="file:/C:/Documents%20and%20Settings/Кулицкий/Мои%20документы/NetBeansProjects/modify-marshal/src/extercustomize/po.xsd" uri="xml-resources/jaxb/external/po.xsd"/>
 </catalog>
